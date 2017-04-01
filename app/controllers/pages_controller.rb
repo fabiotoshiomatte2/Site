@@ -4,4 +4,9 @@ class PagesController < ApplicationController
   	@ruby ='variavel'
 
   end
+
+  def paginas
+  	@pagina = Page.find(params[:id])
+  end
+
 end
